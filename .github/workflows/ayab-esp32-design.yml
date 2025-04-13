@@ -39,4 +39,4 @@ jobs:
         if: always()
         with:
           name: erc-drc-artifacts
-          path: DesignCheck
+          path: DesignChecks
