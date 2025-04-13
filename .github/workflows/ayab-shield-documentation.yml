@@ -19,7 +19,7 @@ on:
 
 env:
   workflow_project_dir: ayab-shield
-  kicad_project_name: ayab_shield
+  kicad_project_name: arduino_shield
 
 jobs:
   buildfiles:
