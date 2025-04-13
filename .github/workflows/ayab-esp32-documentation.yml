@@ -23,7 +23,6 @@ env:
 
 jobs:
   buildfiles:
-    if: github.event.pull_request.merged == true
     name: Design check & documentation build
     runs-on: ubuntu-latest
     steps:
@@ -54,7 +53,7 @@ jobs:
         run: |
           python3 scripts/jlc_bom_formatter.py ${workflow_project_dir}/Outputs/raw-bom.csv     ${workflow_project_dir}/Outputs/${kicad_project_name}-BOM-JLC.csv
           python3 scripts/jlc_cpl_formatter.py ${workflow_project_dir}/Outputs/raw-pos-all.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-CPL-JLC.csv
-          
+
           sudo mv ${workflow_project_dir}/Outputs/raw-bom.csv     ${workflow_project_dir}/Outputs/${kicad_project_name}-bom.csv 
           sudo mv ${workflow_project_dir}/Outputs/raw-pos-all.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-pos.csv 
 
