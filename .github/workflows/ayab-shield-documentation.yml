@@ -56,7 +56,7 @@ jobs:
           python3 scripts/jlc_cpl_formatter.py ${workflow_project_dir}/Outputs/raw-pos-all-pos.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-CPL-JLC.csv
           
           sudo mv ${workflow_project_dir}/Outputs/raw-bom.csv     ${workflow_project_dir}/Outputs/${kicad_project_name}-bom.csv 
-          sudo mv ${workflow_project_dir}/Outputs/raw-pos-all.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-pos.csv 
+          sudo mv ${workflow_project_dir}/Outputs/raw-pos-all-pos.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-pos.csv 
 
       - name: Add reference material to repo
         env: 
