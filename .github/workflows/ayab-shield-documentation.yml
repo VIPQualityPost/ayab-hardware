@@ -39,7 +39,7 @@ jobs:
           git config --global user.email "robot@ayab-knitting.com"
           git config --global user.name "AYAB Github Action"
           git fetch
-          git checkout -c documentation
+          git checkout documentation
 
       - name: Export reference materials
         run: |
