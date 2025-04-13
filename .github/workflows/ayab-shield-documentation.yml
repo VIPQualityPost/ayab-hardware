@@ -59,6 +59,7 @@ jobs:
         run: |
           git add .
           git commit -m "Add reference material to repo [skip ci]"
+          git push -u origin documentation
           gh pr create --head documentation --base main --title "Add reference material to repo" --body "Automated PR from GHA"
 
       - name: Export gerbers and assembly documentation
@@ -68,12 +69,12 @@ jobs:
 
       - name: Convert BOM & CPL to JLC format
         run: |
-          sudo mv Outputs/raw-pos-all-pos.csv Outputs/raw-pos.csv
+          sudo mv Outputs/raw-pos-all-pos.csv  Outputs/raw-pos.csv
           python3 scripts/jlc_bom_formatter.py Outputs/raw-bom.csv Outputs/${kicad_project_name}-BOM-JLC.csv
           python3 scripts/jlc_cpl_formatter.py Outputs/raw-pos.csv Outputs/${kicad_project_name}-CPL-JLC.csv
           
-          sudo mv ${workflow_project_dir}/Outputs/raw-bom.csv     ${workflow_project_dir}/Outputs/${kicad_project_name}-bom.csv 
-          sudo mv ${workflow_project_dir}/Outputs/raw-pos.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-pos.csv 
+          sudo mv Outputs/raw-bom.csv Outputs/${kicad_project_name}-bom.csv 
+          sudo mv Outputs/raw-pos.csv Outputs/${kicad_project_name}-pos.csv 
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v4

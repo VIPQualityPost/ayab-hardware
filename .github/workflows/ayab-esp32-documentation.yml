@@ -59,6 +59,7 @@ jobs:
         run: |
           git add .
           git commit -m "Add reference material to repo [skip ci]"
+          git push -u origin documentation
           gh pr create --head documentation --base main --title "Add reference material to repo" --body "Automated PR from GHA"
 
       - name: Export gerbers and assembly documentation
@@ -80,4 +81,4 @@ jobs:
         if: always()
         with:
           name: documentation-artifacts
-          path: ayab-esp32/Outputs
+          path: Outputs
