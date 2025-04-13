@@ -32,7 +32,16 @@ jobs:
       - name: Install KiCad
         run: sudo bash ./scripts/dependencies.sh
 
-      - name: Export design file PDFs
+      - name: Set up git commit
+        env: 
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.email "robot@ayab-knitting.com"
+          git config --global user.name "AYAB Github Action"
+          git fetch
+          git checkout -c documentation
+
+      - name: Export reference materials
         run: |
           kicad-cli jobset run --file ./ayab-library/ayab-jobset.kicad_jobset --output faf786cb-df2f-40b8-96a2-4a7fc03f48f1 ./${workflow_project_dir}/${kicad_project_name}.kicad_pro
 
@@ -43,36 +52,29 @@ jobs:
           sudo rm ${copper_files}
 
           sudo mv Reference ${workflow_project_dir}/Reference
+        
+      - name: Commit reference materials
+          git add .
+          git commit -m "Add reference material to repo [skip ci]"
+          gh pr create --head documentation --base main --title "Add reference material to repo" --body "Automated PR from GHA"
 
       - name: Export gerbers and assembly documentation
         run: |
           kicad-cli jobset run --file ./ayab-library/ayab-jobset.kicad_jobset --output aeb40242-edfd-4f73-854b-b9cc9a052a15 ./${workflow_project_dir}/${kicad_project_name}.kicad_pro
           kicad-cli jobset run --file ./ayab-library/ayab-jobset.kicad_jobset --output 6ee855ab-9a47-48ef-8c70-9a0d15a3c70a ./${workflow_project_dir}/${kicad_project_name}.kicad_pro
-          sudo mv Outputs ${workflow_project_dir}/Outputs
 
       - name: Convert BOM & CPL to JLC format
         run: |
-          python3 scripts/jlc_bom_formatter.py ${workflow_project_dir}/Outputs/raw-bom.csv     ${workflow_project_dir}/Outputs/${kicad_project_name}-BOM-JLC.csv
-          python3 scripts/jlc_cpl_formatter.py ${workflow_project_dir}/Outputs/raw-pos-all-pos.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-CPL-JLC.csv
+          sudo mv Outputs/raw-pos-all-pos.csv Outputs/raw-pos.csv
+          python3 scripts/jlc_bom_formatter.py Outputs/raw-bom.csv Outputs/${kicad_project_name}-BOM-JLC.csv
+          python3 scripts/jlc_cpl_formatter.py Outputs/raw-pos.csv Outputs/${kicad_project_name}-CPL-JLC.csv
           
           sudo mv ${workflow_project_dir}/Outputs/raw-bom.csv     ${workflow_project_dir}/Outputs/${kicad_project_name}-bom.csv 
-          sudo mv ${workflow_project_dir}/Outputs/raw-pos-all-pos.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-pos.csv 
-
-      - name: Add reference material to repo
-        env: 
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.email "robot@ayab-knitting.com"
-          git config --global user.name "AYAB Github Action"
-          git fetch
-          git checkout documentation
-          git add ${workflow_project_dir}/Reference/*
-          git commit -m "Add reference material to repo [skip ci]"
-          gh pr create --head documentation --base main --title "Add reference material to repo" --body "Automated PR from GHA"
+          sudo mv ${workflow_project_dir}/Outputs/raw-pos.csv ${workflow_project_dir}/Outputs/${kicad_project_name}-pos.csv 
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: documentation-artifacts
-          path: ayab-shield/Outputs
+          path: Outputs
