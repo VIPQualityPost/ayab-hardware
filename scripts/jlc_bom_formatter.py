@@ -14,7 +14,7 @@ def footprintFix(fpName):
 
 bom_file = pd.read_csv(sys.argv[1])
 
-bom_file.columns = ['Designator', 'Value', 'Footprint', 'JLCPCB Part #']
+bom_file.columns = ['Designator', 'Value', 'Footprint', 'Mfg', 'Mfg P/N', 'JLCPCB Part #']
 bom_file['Footprint'] = bom_file['Footprint'].apply(lambda x: footprintFix(x))
 
 bom_file.to_csv(sys.argv[2], index=False)
