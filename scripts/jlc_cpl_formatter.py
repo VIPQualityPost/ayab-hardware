@@ -10,11 +10,8 @@ def reduce_layer(layername):
         return ''
 
 if __name__ == "__main__":
-    cpl_file = pd.read_csv(sys.argv[1])
-
-    # Remove header rows from table
-    cpl_file.drop([0,1,2,3,4,5])
-
+    cpl_file = pd.read_csv(sys.argv[1],skipfooter=1,engine='python')
+    
     # Assign names and sort rows to match JLC format
     cpl_file.columns = ['Designator', 'Val', 'Package', 'Mid X', 'Mid Y', 'Rotation', 'Layer']
     cpl_file = cpl_file.reindex(columns=['Designator', 'Mid X', 'Mid Y', 'Layer', 'Rotation'])

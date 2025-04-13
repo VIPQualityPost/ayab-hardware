@@ -184,7 +184,7 @@
         "description": "",
         "exclude_dnp": false,
         "exclude_footprints_with_th": false,
-        "format": "ascii",
+        "format": "csv",
         "gerber_board_edge": true,
         "negate_bottom_x": false,
         "output_filename": "raw-pos.csv",
