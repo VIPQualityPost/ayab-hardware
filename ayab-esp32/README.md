@@ -19,6 +19,6 @@ Based on the ESP32, many new features have been implemented:\
 The project was designed using KiCad 8. All symbols, footprints, and models are self contained to this repository so no additional files are required in order to view or modify the design.
 
 ![Prototype hardware assembly](images/ayab-esp32.png)
-![Live Render](Reference/top.jpg)
+![Live Render](Reference/top.png)
 
 Questions? Comments? Great ideas? Talk with us in [#hardware-development on Discord](https://discord.gg/A8KE3jcCn2)!
