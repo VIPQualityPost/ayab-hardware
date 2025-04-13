@@ -1,8 +1,8 @@
-name: Assembly Documentation
+name: AYAB Shield Fabrication Outputs
 
 on:
   workflow_dispatch:
-  
+
   pull_request:
     branches:
       - main

@@ -1,4 +1,4 @@
-name: Hardware Design
+name: AYAB ESP32 Hardware Check
 
 on:
   workflow_dispatch:
