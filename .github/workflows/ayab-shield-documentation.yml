@@ -36,14 +36,19 @@ jobs:
       - name: Export design file PDFs
         run: |
           kicad-cli jobset run --file ./ayab-library/ayab-jobset.kicad_jobset --output faf786cb-df2f-40b8-96a2-4a7fc03f48f1 ./${workflow_project_dir}/${kicad_project_name}.kicad_pro
-          sudo mv ${workflow_project_dir}/Reference/${kicad_project_name}.pdf ${workflow_project_dir}/Reference/${kicad_project_name}-schematic.pdf
-          gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r150 -sOutputFile=${workflow_project_dir}/Reference/${kicad_project_name}-assembly.pdf *Cu.pdf
-          sudo rm *Cu.pdf
+
+          sudo mv Reference/{kicad_project_name}.pdf Reference/${kicad_project_name}-schematic.pdf
+          
+          gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r150 -sOutputFile=Reference/${kicad_project_name}-assembly.pdf *Cu.pdf
+          sudo rm Reference/*Cu.pdf
+
+          sudo mv Reference ${workflow_project_dir}/Reference
 
       - name: Export gerbers and assembly documentation
         run: |
           kicad-cli jobset run --file ./ayab-library/ayab-jobset.kicad_jobset --output aeb40242-edfd-4f73-854b-b9cc9a052a15 ./${workflow_project_dir}/${kicad_project_name}.kicad_pro
           kicad-cli jobset run --file ./ayab-library/ayab-jobset.kicad_jobset --output 6ee855ab-9a47-48ef-8c70-9a0d15a3c70a ./${workflow_project_dir}/${kicad_project_name}.kicad_pro
+          sudo mv Outputs ${workflow_project_dir}/Outputs
 
       - name: Convert BOM & CPL to JLC format
         run: |
@@ -68,4 +73,4 @@ jobs:
         if: always()
         with:
           name: documentation-artifacts
-          path: ayab-esp32/Outputs
+          path: ayab-shield/Outputs

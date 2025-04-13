@@ -32,11 +32,11 @@ jobs:
 
       - name: Verify clean design files
         run: |
-          kicad-cli jobset run --file ./ayab-library/ayab-jobset.kicad_jobset --output 546878ce-2bd2-4fb6-b2a1-e67785afa624 ${workflow_project_dir}/${kicad_project_dir}.kicad_pro 
+          kicad-cli jobset run --file ./ayab-library/ayab-jobset.kicad_jobset --output 546878ce-2bd2-4fb6-b2a1-e67785afa624 ${workflow_project_dir}/${kicad_project_name}.kicad_pro 
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: erc-drc-artifacts
-          path: ayab-esp32/DesignCheck
+          path: DesignCheck
