@@ -38,8 +38,9 @@ jobs:
 
           sudo mv Reference/${kicad_project_name}.pdf Reference/${kicad_project_name}-schematic.pdf
           
-          gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r150 -sOutputFile=Reference/${kicad_project_name}-assembly.pdf *Cu.pdf
-          sudo rm Reference/*Cu.pdf
+          copper_files = $(ls *Cu.pdf)
+          gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r150 -sOutputFile=Reference/${kicad_project_name}-assembly.pdf ${copper_files}
+          sudo rm ${copper_files}
 
           sudo mv Reference ${workflow_project_dir}/Reference
 
