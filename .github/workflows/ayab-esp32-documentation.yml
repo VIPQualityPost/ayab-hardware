@@ -54,6 +54,9 @@ jobs:
           sudo mv Reference ${workflow_project_dir}/Reference
         
       - name: Commit reference materials
+        env: 
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run:
           git add .
           git commit -m "Add reference material to repo [skip ci]"
           gh pr create --head documentation --base main --title "Add reference material to repo" --body "Automated PR from GHA"
