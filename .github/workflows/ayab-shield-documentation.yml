@@ -69,7 +69,7 @@ jobs:
 
       - name: Convert BOM & CPL to JLC format
         run: |
-          sudo mv Outputs/raw-pos-all-pos.csv  Outputs/raw-pos.csv
+          sudo mv Outputs/raw-pos-all.csv  Outputs/raw-pos.csv
           python3 scripts/jlc_bom_formatter.py Outputs/raw-bom.csv Outputs/${kicad_project_name}-BOM-JLC.csv
           python3 scripts/jlc_cpl_formatter.py Outputs/raw-pos.csv Outputs/${kicad_project_name}-CPL-JLC.csv
           
