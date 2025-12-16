@@ -13,6 +13,113 @@
 		(comment 2 "distributed under CC-BY-SA-4.0")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ayab-lib:AO3400A"
 			(pin_names
 				(hide yes)
@@ -2793,12 +2900,8 @@
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2898,7 +3001,8 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "+3V3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2918,12 +3022,8 @@
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2999,7 +3099,8 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3346,6 +3447,16 @@
 			(type default)
 		)
 		(uuid "298765a4-670b-4552-839d-b52e8abc1792")
+	)
+	(wire
+		(pts
+			(xy 205.74 77.47) (xy 185.42 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a54a809-66f5-4fe5-aecd-5ff873ae229e")
 	)
 	(wire
 		(pts
@@ -3766,26 +3877,6 @@
 			(type default)
 		)
 		(uuid "776fba7d-e2b8-46d8-9747-1409ebea0aed")
-	)
-	(wire
-		(pts
-			(xy 185.42 77.47) (xy 198.12 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77d3240e-79ed-42ad-946e-6a07726ec0eb")
-	)
-	(wire
-		(pts
-			(xy 198.12 82.55) (xy 185.42 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "780baf1d-3009-40ff-a531-1002d7913e8b")
 	)
 	(wire
 		(pts
@@ -4366,6 +4457,16 @@
 			(type default)
 		)
 		(uuid "eee72c50-478f-4c14-b585-aed8ca4e5b87")
+	)
+	(wire
+		(pts
+			(xy 205.74 82.55) (xy 185.42 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1abc491-7b9b-43fd-835f-52e50e7f24db")
 	)
 	(wire
 		(pts
@@ -6624,43 +6725,7 @@
 			"AAAAANMQtQAAAAAAAJiGqAUAAAAAAMA0RC0AAAAAAACmIWoBAAAAAAAwDVELAAAAAACAaYhaAAAA"
 			"AAAATEPUAgAAAAAAYBqiFgAAAAAAANMQtQAAAAAAAJiGqAUAAAAAAMA0RC0AAAAAAACmIWoBAAAA"
 			"AAAwDVELAAAAAACAaYhaAAAAAAAATEPUAgAAAAAAYBqiFgAAAAAAANMQtQAAAAAAAJiGqAUAAAAA"
-			"AMA0RC0AAAAAAACm+X9HfdkYK7KT6AAAAABJRU5ErkJgggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"AMA0RC0AAAAAAACm+X9HfdkYK7KT6AAAAABJRU5ErkJggg=="
 		)
 	)
 	(image
@@ -8680,43 +8745,7 @@
 			"yBwAAABAIGQOAAAAIBAyBwAAABAImQMAAAAIhMwBAAAABELmAAAAAAIhcwAAAACBkDkAAACAQMgc"
 			"AAAAQCBkDgAAACAQMgcAAAAQCJkDAAAACITMAQAAAARC5gAAAAACIXMAAAAAgZA5AAAAgEDIHAAA"
 			"AEAgZA4AAAAgEDIHAAAAEAiZAwAAAAiEzAEAAAAEQuYAAAAAAiFzAAAAAIGQOQAAAIBAyBwAAABA"
-			"IGQOAAAAIBAyBwAAABCI/wCjmpmeXlzo7gAAAABJRU5ErkJgggAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"IGQOAAAAIBAyBwAAABCI/wCjmpmeXlzo7gAAAABJRU5ErkJggg=="
 		)
 	)
 	(image
@@ -11269,43 +11298,7 @@
 			"AAAAAM5AkAEAAAAAAAAAnIEgAwAAAAAAAAA4A0EGAAAAAAAAAHAGggwAAAAAAAAA4AwEGQAAAAAA"
 			"AADAGQgyAAAAAAAAAIAzEGQAAAAAAAAAAGcgyAAAAAAAAAAAzkCQAQAAAAAAAACcgSADAAAAAAAA"
 			"ADgDQQYAAAAAAAAAcAaCDAAAAAAAAADgDAQZAAAAAAAAAMAZCDIAAAAAAAAAgDMQZAAAAAAAAAAA"
-			"ZyDIAAAAAAAAAADOQJABAAAAAAAAAJzxf+GaTVzSJroBAAAAAElFTkSuQmCCAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+			"ZyDIAAAAAAAAAADOQJABAAAAAAAAAJzxf+GaTVzSJroBAAAAAElFTkSuQmCC"
 		)
 	)
 	(image
@@ -12399,43 +12392,7 @@
 			"AACA0EgCAAAAQGgkAQAAACA0kgAAAAAQGkkAAAAACI0kAAAAAIRGEgAAAABCIwkAAAAAoZEEAAAA"
 			"gNBIAgAAAEBoJAEAAAAgNJIAAAAAEBpJAAAAAAiNJAAAAACERhIAAAAAQiMJAAAAAKGRBAAAAIDQ"
 			"SAIAAABAaCQBAAAAIDSSAAAAABAaSQAAAAAIjSQAAAAAhEYSAAAAAEIjCQAAAAChkQQAAACA0EgC"
-			"AAAAQGj/AfSLRfHnCHWBAAAAAElFTkSuQmCC////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////wAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0///////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////0QUAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAS6////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////wQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqb/////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////////////////////////////////////"
-			"////////////////////////////////////////////rQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAABgv///////////////////////1kzcVJrRVFSQ2ZLc0p2K0dYVkM4ZzdiZHBnSWNCdUJZ"
-			"TDRoQzIvVzR0dzZLZ25wdUg1MnhKZGRuY1ZxTW9zcTlIQ1JFYmRodzlGbjRJTE9EUGptbGRFRXk1"
-			"Z3MrR3dzeGE3eWFvQUlFbGIvYkhIYVJqS2VISHozOWphem4xR3NLTGtKTUwwUXhmM1RCYnJzajk2"
-			"ekEyZmpHWmN4MjdIMm1reWJNdVVHYjl1bzUwbXErN1pmZDg4REFBQVdPOTk3a1pWMFdTTWxtMWFv"
-			"TUgybGdnaERsLys1d29kRW9EWkhCQUVRUkEwVk1Bd0J3VHhnVUZqNEFDZ3BONUdGVVVRSXBHRUFr"
-			"Q24wYjlOeFNBSWd2aERUMzZXV010Q2RXYzdXUTdqZEcrQWF0ZzVqSmRpTzIwVVFYdnFURU1oOWor"
-			"SkpFbFZGVWtLd0J2cjZqK2xSTFMrRHcvUHJFTkZKeTlZcU1mNVJnUlZtenZmUmsya3JmSjVXR3hq"
-			"NXdVSVVXUEo1Z1VLWFlkR3d1bnBJVTgvc0ZEWnVRdnRobkVLUWFQU2M1d21paUNNNUxEd0doWU9z"
-			"SnBuVDk3UUFkSEN5VTJMOCsrNTZNaDVEcVpTY0JCcENJSWdDQm9xZnBDeE9ZU0VoTlRWMVFlN0Z0"
-			"RC9EeUtaaEFDQU1SbTl2dDVqTXBrWUFHUXluRTRXK2xiSVpMS3VycTY1dWZsZ1Z3UWFFS1dscFNn"
-			"NkFLOG9XT1dwR2VVWVF0UWZZOFkrdVFJQUFBQlIwc2hraEVRWXRhN0hFbFJGVTR2akxRVWlJRWdo"
-			"QU1Ca2ZBcjRZbFV2VS9Kb21MVFJCRE01YnZjaHFKRHBSRFBaMi9sRmI1S3pnZjJYSmkwZ04ybUtX"
-			"ZmQrTG95NmpQVENab0tBeGZqeDRsektsRFEwMUtRZzJUbnY4dWxBR3MxNCs3NGVvSW9tNDlTNW5W"
-			"T0NtdmtZWlNTK2lzc3FQRUlRUkY5ZmY5dTJiVlFxOWV0TGd3WmRVMU9Ub0tDZ3RiVTEvRE1QUWRC"
-			"UVZGOWZuNUdSTWRpMUdCQS9TSmlqdGJXMW9LQmdzR3NCL2Q5QUJZVUVpVGpXMHRMY1MxY1VuTlhj"
-			"M01JRWlLQ1FJTXljZ3I0Uk9wMysvdjM3ZGV2V0RYWkZvQUVSRXhOVFZsYlc3OFhpckpxYU9qcEF4"
-			"QldWdUE0NVJGQlNWaEJFUU04d0J4QVNFZUd5SGRJbEZ3SXJMNjFtNHFpVWhyWWNrWHVTaEpEMkNF"
-			"VUNLS0NXbDNiK1ZGUlJWWUhVZlZWR1JRV1Z6c0t4MXp0dExBOXhMaFZuMXViUnNQYXFrb3AySENm"
-			"V1ZOWFNBVUY1K0hBdXNSMEFBR0c0dWlJSw=="
+			"AAAAQGj/AfSLRfHnCHWBAAAAAElFTkSuQmCC"
 		)
 	)
 	(label "VCC_SPI"
@@ -12660,28 +12617,6 @@
 		)
 		(uuid "0eec980b-2c28-45b8-ae9d-75d991820b51")
 	)
-	(hierarchical_label "EOL_L_N"
-		(shape input)
-		(at 198.12 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "15fb3d01-8564-4b58-bc87-cd2a44001c8f")
-	)
-	(hierarchical_label "EOL_R_N"
-		(shape input)
-		(at 198.12 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4388bfaa-9268-40bb-80f0-3369629ba357")
-	)
 	(hierarchical_label "UART_RX"
 		(shape input)
 		(at 198.12 59.69 0)
@@ -12770,7 +12705,7 @@
 		)
 		(uuid "95d8b866-7cb6-42d0-b203-3a470d5c91e0")
 	)
-	(hierarchical_label "EOL_L_P"
+	(hierarchical_label "EOL_L"
 		(shape input)
 		(at 198.12 74.93 0)
 		(effects
@@ -12814,7 +12749,7 @@
 		)
 		(uuid "d54a9bbf-1500-4b5e-8799-2a1529fbfc8b")
 	)
-	(hierarchical_label "EOL_R_P"
+	(hierarchical_label "EOL_R"
 		(shape input)
 		(at 198.12 80.01 0)
 		(effects
@@ -12892,13 +12827,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 33.02 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12964,7 +12898,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C25804"
@@ -13004,15 +12937,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 87.63 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "791-RMC16K103FTP "
 			(at 87.63 41.91 0)
 			(effects
 				(font
@@ -13080,13 +13004,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 157.48 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13146,13 +13069,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 247.65 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13170,28 +13092,30 @@
 	(symbol
 		(lib_id "ayab-lib:R_Small_US")
 		(at 83.82 104.14 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "253414f9-7e2e-4339-acba-cc9822d3dedf")
 		(property "Reference" "R204"
-			(at 81.28 102.8699 0)
+			(at 81.28 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 81.28 105.4099 0)
+		(property "Value" "5k1"
+			(at 81.28 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -13218,10 +13142,9 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC ID" "C25804"
+		(property "LCSC ID" "C23186"
 			(at 83.82 104.14 0)
 			(effects
 				(font
@@ -13258,15 +13181,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 83.82 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 83.82 104.14 0)
 			(effects
 				(font
@@ -13341,7 +13255,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C57112"
@@ -13381,15 +13294,6 @@
 			)
 		)
 		(property "OEM" "FH (Guangdong Fenghua Advanced Tech)"
-			(at 154.94 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "187-CL10B104MB8NNNC "
 			(at 154.94 41.91 0)
 			(effects
 				(font
@@ -13465,7 +13369,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C7501292"
@@ -13513,15 +13416,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser PN" "855-M20-9750446 "
-			(at 76.2 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "bf04ab4b-aaec-4eeb-9b40-28ddfd23e8ef")
 		)
@@ -13538,6 +13432,73 @@
 			(project "ayab-esp32"
 				(path "/ad16b75f-afc8-4717-a7c6-8dd7b69a18e2/a7e0db0f-e473-44d4-a2fe-681f732aacb2"
 					(reference "J201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 205.74 77.47 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "396a7b88-e24a-42be-be7e-7bbbb18f6442")
+		(property "Reference" "TP1"
+			(at 210.82 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADC0"
+			(at 210.82 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 205.74 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a0a24cd-55f4-4975-8111-b5af3c35a330")
+		)
+		(instances
+			(project ""
+				(path "/ad16b75f-afc8-4717-a7c6-8dd7b69a18e2/a7e0db0f-e473-44d4-a2fe-681f732aacb2"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -13570,7 +13531,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Library:ESP32-S3-MINI-1"
+		(property "Footprint" "Espressif:ESP32-S3-MINI-1"
 			(at 139.7 148.59 0)
 			(effects
 				(font
@@ -13594,7 +13555,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C3013941"
@@ -13634,15 +13594,6 @@
 			)
 		)
 		(property "OEM" "Espressif Systems"
-			(at 139.7 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "356-ESP32-S3-MINI1N8 "
 			(at 139.7 92.71 0)
 			(effects
 				(font
@@ -13909,7 +13860,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C20917"
@@ -13949,15 +13899,6 @@
 			)
 		)
 		(property "OEM" "Alpha & Omega Semicon"
-			(at 248.92 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 248.92 63.5 0)
 			(effects
 				(font
@@ -14033,7 +13974,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C25804"
@@ -14073,15 +14013,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 146.05 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "791-RMC16K103FTP "
 			(at 146.05 173.99 0)
 			(effects
 				(font
@@ -14156,7 +14087,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C57112"
@@ -14196,15 +14126,6 @@
 			)
 		)
 		(property "OEM" "FH (Guangdong Fenghua Advanced Tech)"
-			(at 78.74 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "187-CL10B104MB8NNNC "
 			(at 78.74 50.8 0)
 			(effects
 				(font
@@ -14279,7 +14200,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C25804"
@@ -14319,15 +14239,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 91.44 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "791-RMC16K103FTP "
 			(at 91.44 172.72 0)
 			(effects
 				(font
@@ -14402,7 +14313,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -14451,15 +14361,6 @@
 			)
 		)
 		(property "Package" "SMA"
-			(at 247.65 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "750-SS54B-HF "
 			(at 247.65 41.91 0)
 			(effects
 				(font
@@ -14527,13 +14428,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 78.74 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14599,7 +14499,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C57112"
@@ -14639,15 +14538,6 @@
 			)
 		)
 		(property "OEM" "FH (Guangdong Fenghua Advanced Tech)"
-			(at 45.72 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "187-CL10B104MB8NNNC "
 			(at 45.72 129.54 0)
 			(effects
 				(font
@@ -14699,7 +14589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:BUZ-SMD_4P-L8.5-W8.5-P8.50-BR"
+		(property "Footprint" "easyeda2kicad:BUZ-SMD_4P-L8.5-W8.5-P8.50-BR"
 			(at 257.81 52.07 0)
 			(effects
 				(font
@@ -14723,7 +14613,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C94599"
@@ -14745,15 +14634,6 @@
 			)
 		)
 		(property "OEM PN" "MLT-8530"
-			(at 257.81 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "179-CMT-8504-99SMTTR "
 			(at 257.81 36.83 0)
 			(effects
 				(font
@@ -14836,7 +14716,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -14876,15 +14755,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 55.88 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 55.88 104.14 0)
 			(effects
 				(font
@@ -14935,7 +14805,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Library:KEY-TH_4P-L7.5-W11.5-P4.5"
+		(property "Footprint" "easyeda2kicad:KEY-TH_4P-L7.5-W11.5-P4.5"
 			(at 99.06 175.26 0)
 			(effects
 				(font
@@ -14959,7 +14829,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C2689823"
@@ -14999,15 +14868,6 @@
 			)
 		)
 		(property "OEM" "Yuandi"
-			(at 99.06 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 99.06 175.26 0)
 			(effects
 				(font
@@ -15057,7 +14917,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:KEY-TH_4P-L7.5-W11.5-P4.5"
+		(property "Footprint" "easyeda2kicad:KEY-TH_4P-L7.5-W11.5-P4.5"
 			(at 73.66 48.26 0)
 			(effects
 				(font
@@ -15081,7 +14941,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C2689823"
@@ -15121,15 +14980,6 @@
 			)
 		)
 		(property "OEM" "Yuandi"
-			(at 73.66 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 73.66 48.26 0)
 			(effects
 				(font
@@ -15205,7 +15055,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C84256"
@@ -15245,15 +15094,6 @@
 			)
 		)
 		(property "OEM" "Foshan NationStar Optoelectronics"
-			(at 83.82 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "749-SM0805RC "
 			(at 83.82 113.03 0)
 			(effects
 				(font
@@ -15329,7 +15169,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C57112"
@@ -15369,15 +15208,6 @@
 			)
 		)
 		(property "OEM" "FH (Guangdong Fenghua Advanced Tech)"
-			(at 144.78 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "187-CL10B104MB8NNNC "
 			(at 144.78 41.91 0)
 			(effects
 				(font
@@ -15450,7 +15280,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C25804"
@@ -15490,15 +15319,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 96.52 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "791-RMC16K103FTP "
 			(at 96.52 184.15 0)
 			(effects
 				(font
@@ -15574,7 +15394,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C21189"
@@ -15614,15 +15433,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 251.46 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "71-CRCW06030000Z0EC "
 			(at 251.46 54.61 0)
 			(effects
 				(font
@@ -15697,7 +15507,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C25804"
@@ -15737,15 +15546,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 41.91 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "791-RMC16K103FTP "
 			(at 41.91 113.03 0)
 			(effects
 				(font
@@ -15821,7 +15621,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C15850"
@@ -15861,15 +15660,6 @@
 			)
 		)
 		(property "OEM" "Samsung Electro-Mechanics"
-			(at 163.83 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "963-TMK212BBJ106KG-T "
 			(at 163.83 41.91 0)
 			(effects
 				(font
@@ -15938,13 +15728,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 139.7 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16011,7 +15800,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C2296"
@@ -16051,15 +15839,6 @@
 			)
 		)
 		(property "OEM" "Hubei KENTO Elec"
-			(at 55.88 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "755-SML-H12Y8TT86C "
 			(at 55.88 113.03 0)
 			(effects
 				(font
@@ -16135,7 +15914,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C25804"
@@ -16175,15 +15953,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 241.3 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "791-RMC16K103FTP "
 			(at 241.3 68.58 0)
 			(effects
 				(font
@@ -16235,7 +16004,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Library:KEY-TH_4P-L7.5-W11.5-P4.5"
+		(property "Footprint" "easyeda2kicad:KEY-TH_4P-L7.5-W11.5-P4.5"
 			(at 35.56 128.27 0)
 			(effects
 				(font
@@ -16259,7 +16028,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C2689823"
@@ -16299,15 +16067,6 @@
 			)
 		)
 		(property "OEM" "Yuandi"
-			(at 35.56 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 35.56 128.27 0)
 			(effects
 				(font
@@ -16377,13 +16136,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 41.91 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16443,13 +16201,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 251.46 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16509,13 +16266,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 139.7 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16583,7 +16339,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -16623,15 +16378,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 69.85 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 69.85 104.14 0)
 			(effects
 				(font
@@ -16707,7 +16453,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C2297"
@@ -16747,15 +16492,6 @@
 			)
 		)
 		(property "OEM" "Hubei KENTO Elec"
-			(at 69.85 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "749-SM0805PGC "
 			(at 69.85 113.03 0)
 			(effects
 				(font
@@ -16824,13 +16560,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 87.63 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16840,6 +16575,73 @@
 			(project "ayab-esp32"
 				(path "/ad16b75f-afc8-4717-a7c6-8dd7b69a18e2/a7e0db0f-e473-44d4-a2fe-681f732aacb2"
 					(reference "#PWR0204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 205.74 82.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "efa39fc3-2fd3-4639-ba0d-76e8af71fc82")
+		(property "Reference" "TP2"
+			(at 210.82 81.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADC1"
+			(at 210.82 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 205.74 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e2bbea3-a3ac-4c53-bd4e-4e19c3e27ae2")
+		)
+		(instances
+			(project "ayab-esp32"
+				(path "/ad16b75f-afc8-4717-a7c6-8dd7b69a18e2/a7e0db0f-e473-44d4-a2fe-681f732aacb2"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -16890,13 +16692,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 91.44 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16955,13 +16756,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 163.83 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17020,13 +16820,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 107.95 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17092,7 +16891,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C7501292"
@@ -17132,15 +16930,6 @@
 			)
 		)
 		(property "OEM" "Megastar"
-			(at 208.28 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "855-M20-9750446 "
 			(at 208.28 110.49 0)
 			(effects
 				(font

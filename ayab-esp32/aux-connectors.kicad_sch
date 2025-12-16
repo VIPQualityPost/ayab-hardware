@@ -1072,12 +1072,8 @@
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1177,7 +1173,8 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "+3V3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1197,12 +1194,8 @@
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1302,7 +1295,8 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "+5V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1322,12 +1316,8 @@
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1403,7 +1393,8 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3099,7 +3090,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -3139,15 +3129,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 182.88 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 182.88 59.69 0)
 			(effects
 				(font
@@ -3222,7 +3203,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C25804"
@@ -3262,15 +3242,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 210.82 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "791-RMC16K103FTP "
 			(at 210.82 142.24 0)
 			(effects
 				(font
@@ -3345,7 +3316,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" ""
@@ -3385,15 +3355,6 @@
 			)
 		)
 		(property "OEM" ""
-			(at 93.98 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 93.98 43.18 0)
 			(effects
 				(font
@@ -3464,13 +3425,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 220.98 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3537,7 +3497,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C7501292"
@@ -3577,15 +3536,6 @@
 			)
 		)
 		(property "OEM" "Megastar"
-			(at 90.17 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "855-M20-9750446 "
 			(at 90.17 134.62 0)
 			(effects
 				(font
@@ -3667,10 +3617,9 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC ID" "C20625577"
+		(property "LCSC ID" "C3029334"
 			(at 124.46 67.31 0)
 			(effects
 				(font
@@ -3707,15 +3656,6 @@
 			)
 		)
 		(property "OEM" "XUNPU"
-			(at 124.46 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "485-4208 "
 			(at 124.46 67.31 0)
 			(effects
 				(font
@@ -3789,13 +3729,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3861,7 +3800,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -3901,15 +3839,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 193.04 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 193.04 59.69 0)
 			(effects
 				(font
@@ -3977,13 +3906,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 115.57 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4047,7 +3975,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23182"
@@ -4087,15 +4014,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 168.91 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-RC0603JR-1347RL "
 			(at 168.91 69.85 0)
 			(effects
 				(font
@@ -4163,13 +4081,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 102.87 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4236,7 +4153,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C7501292"
@@ -4276,15 +4192,6 @@
 			)
 		)
 		(property "OEM" "Megastar"
-			(at 254 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "855-M20-9750446 "
 			(at 254 67.31 0)
 			(effects
 				(font
@@ -4365,7 +4272,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -4405,15 +4311,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 63.5 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 63.5 59.69 0)
 			(effects
 				(font
@@ -4488,7 +4385,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -4528,15 +4424,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 93.98 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 93.98 59.69 0)
 			(effects
 				(font
@@ -4611,7 +4498,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" ""
@@ -4651,15 +4537,6 @@
 			)
 		)
 		(property "OEM" ""
-			(at 223.52 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 223.52 43.18 0)
 			(effects
 				(font
@@ -4730,13 +4607,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 81.28 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4795,13 +4671,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 81.28 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4868,7 +4743,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C20917"
@@ -4908,15 +4782,6 @@
 			)
 		)
 		(property "OEM" "Alpha & Omega Semicon"
-			(at 82.55 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 82.55 67.31 0)
 			(effects
 				(font
@@ -4988,13 +4853,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 53.34 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5058,7 +4922,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23182"
@@ -5098,15 +4961,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 39.37 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-RC0603JR-1347RL "
 			(at 39.37 69.85 0)
 			(effects
 				(font
@@ -5181,7 +5035,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -5221,15 +5074,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 223.52 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 223.52 59.69 0)
 			(effects
 				(font
@@ -5304,7 +5148,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -5344,15 +5187,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 101.6 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 101.6 59.69 0)
 			(effects
 				(font
@@ -5427,7 +5261,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -5467,15 +5300,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 231.14 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 231.14 59.69 0)
 			(effects
 				(font
@@ -5550,7 +5374,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C25804"
@@ -5590,15 +5413,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 210.82 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "791-RMC16K103FTP "
 			(at 210.82 127 0)
 			(effects
 				(font
@@ -5671,7 +5485,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23182"
@@ -5711,15 +5524,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 59.69 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-RC0603JR-1347RL "
 			(at 59.69 132.08 0)
 			(effects
 				(font
@@ -5792,7 +5596,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23182"
@@ -5832,15 +5635,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 59.69 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-RC0603JR-1347RL "
 			(at 59.69 134.62 0)
 			(effects
 				(font
@@ -5913,7 +5707,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23182"
@@ -5953,15 +5746,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 39.37 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-RC0603JR-1347RL "
 			(at 39.37 64.77 0)
 			(effects
 				(font
@@ -6030,13 +5814,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" ""
 			(at 182.88 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6095,13 +5878,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 245.11 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6165,7 +5947,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23182"
@@ -6205,15 +5986,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 203.2 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-RC0603JR-1347RL "
 			(at 203.2 135.89 0)
 			(effects
 				(font
@@ -6286,7 +6058,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23182"
@@ -6326,15 +6097,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 168.91 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-RC0603JR-1347RL "
 			(at 168.91 64.77 0)
 			(effects
 				(font
@@ -6410,7 +6172,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C3029345"
@@ -6450,15 +6211,6 @@
 			)
 		)
 		(property "OEM" "XUNPU"
-			(at 228.6 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "474-GPS-00579 "
 			(at 228.6 135.89 0)
 			(effects
 				(font
@@ -6546,7 +6298,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C20917"
@@ -6586,15 +6337,6 @@
 			)
 		)
 		(property "OEM" "Alpha & Omega Semicon"
-			(at 73.66 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 73.66 62.23 0)
 			(effects
 				(font
@@ -6665,13 +6407,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 232.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6738,7 +6479,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C20917"
@@ -6778,15 +6518,6 @@
 			)
 		)
 		(property "OEM" "Alpha & Omega Semicon"
-			(at 203.2 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 203.2 62.23 0)
 			(effects
 				(font
@@ -6864,7 +6595,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C23186"
@@ -6904,15 +6634,6 @@
 			)
 		)
 		(property "OEM" "UNI-ROYAL(Uniroyal Elec)"
-			(at 53.34 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "603-AC0603FR-135K1L "
 			(at 53.34 59.69 0)
 			(effects
 				(font
@@ -6988,7 +6709,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC ID" "C20917"
@@ -7028,15 +6748,6 @@
 			)
 		)
 		(property "OEM" "Alpha & Omega Semicon"
-			(at 212.09 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 212.09 67.31 0)
 			(effects
 				(font

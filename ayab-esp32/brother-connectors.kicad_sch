@@ -1212,12 +1212,8 @@
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1317,7 +1313,8 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "+12V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1337,12 +1334,8 @@
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1442,7 +1435,8 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "+5V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1462,12 +1456,8 @@
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers
-				(hide yes)
-			)
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1543,7 +1533,8 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4595,13 +4586,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 55.88 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4644,7 +4634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:CONN-TH_3P-P2.50_X2564WV-03-N0SN"
+		(property "Footprint" "easyeda2kicad:CONN-TH_3P-P2.50_X2564WV-03-N0SN"
 			(at 242.57 110.49 0)
 			(effects
 				(font
@@ -4668,7 +4658,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -4699,15 +4688,6 @@
 			)
 		)
 		(property "LCSC ID" "C397419"
-			(at 242.57 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-22-03-5035 "
 			(at 242.57 110.49 0)
 			(effects
 				(font
@@ -4779,13 +4759,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 234.95 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4852,7 +4831,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -4883,15 +4861,6 @@
 			)
 		)
 		(property "LCSC ID" "C225243"
-			(at 63.5 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-53014-0510 "
 			(at 63.5 135.89 0)
 			(effects
 				(font
@@ -4976,7 +4945,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -5007,15 +4975,6 @@
 			)
 		)
 		(property "LCSC ID" "C225241"
-			(at 63.5 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-53014-0310 "
 			(at 63.5 107.95 0)
 			(effects
 				(font
@@ -5093,7 +5052,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -5115,15 +5073,6 @@
 			)
 		)
 		(property "OEM" ""
-			(at 133.35 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 133.35 118.11 0)
 			(effects
 				(font
@@ -5196,7 +5145,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -5218,15 +5166,6 @@
 			)
 		)
 		(property "OEM" "Hirose"
-			(at 152.4 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "798-HNC2-2.5P-3DS55 "
 			(at 152.4 107.95 0)
 			(effects
 				(font
@@ -5305,7 +5244,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -5327,15 +5265,6 @@
 			)
 		)
 		(property "OEM" "Hirose"
-			(at 152.4 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "798-HNC2-2.5P-8DS55 "
 			(at 152.4 77.47 0)
 			(effects
 				(font
@@ -5422,13 +5351,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
+		(property "Description" ""
 			(at 144.78 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5495,7 +5423,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -5517,15 +5444,6 @@
 			)
 		)
 		(property "OEM" "HR(Joint Tech Elec)"
-			(at 242.57 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-22-03-5105 "
 			(at 242.57 52.07 0)
 			(effects
 				(font
@@ -5618,13 +5536,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 53.34 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5690,7 +5607,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -5712,15 +5628,6 @@
 			)
 		)
 		(property "OEM" ""
-			(at 133.35 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" ""
 			(at 133.35 120.65 0)
 			(effects
 				(font
@@ -5786,13 +5693,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
+		(property "Description" ""
 			(at 234.95 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5859,7 +5765,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -5881,15 +5786,6 @@
 			)
 		)
 		(property "OEM" "Hirose"
-			(at 152.4 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "798-HNC22.5P10DS55 "
 			(at 152.4 49.53 0)
 			(effects
 				(font
@@ -5989,7 +5885,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -6020,15 +5915,6 @@
 			)
 		)
 		(property "LCSC ID" "C225246"
-			(at 63.5 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-53014-0810 "
 			(at 63.5 77.47 0)
 			(effects
 				(font
@@ -6115,13 +6001,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
+		(property "Description" ""
 			(at 55.88 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6188,7 +6073,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -6219,15 +6103,6 @@
 			)
 		)
 		(property "LCSC ID" "C476906"
-			(at 242.57 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-22-03-5085 "
 			(at 242.57 80.01 0)
 			(effects
 				(font
@@ -6314,13 +6189,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 143.51 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6387,7 +6261,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -6409,15 +6282,6 @@
 			)
 		)
 		(property "OEM" "Hirose"
-			(at 152.4 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "798-HNC22.5P10DS55 "
 			(at 152.4 130.81 0)
 			(effects
 				(font
@@ -6509,13 +6373,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" ""
 			(at 140.97 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6582,7 +6445,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -6613,15 +6475,6 @@
 			)
 		)
 		(property "LCSC ID" "C2834606"
-			(at 63.5 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-53014-1010 "
 			(at 63.5 49.53 0)
 			(effects
 				(font
@@ -6697,7 +6550,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:CONN-TH_X2564WV-05-N0SN"
+		(property "Footprint" "easyeda2kicad:CONN-TH_X2564WV-05-N0SN"
 			(at 242.57 138.43 0)
 			(effects
 				(font
@@ -6721,7 +6574,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -6752,15 +6604,6 @@
 			)
 		)
 		(property "LCSC ID" "C707030"
-			(at 242.57 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-22-03-5055 "
 			(at 242.57 138.43 0)
 			(effects
 				(font
@@ -6838,13 +6681,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" ""
 			(at 232.41 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6911,7 +6753,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -6942,15 +6783,6 @@
 			)
 		)
 		(property "LCSC ID" "C225241"
-			(at 63.5 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-53014-0310 "
 			(at 63.5 120.65 0)
 			(effects
 				(font
@@ -7005,7 +6837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:CONN-TH_3P-P2.50_X2564WV-03-N0SN"
+		(property "Footprint" "easyeda2kicad:CONN-TH_3P-P2.50_X2564WV-03-N0SN"
 			(at 242.57 123.19 0)
 			(effects
 				(font
@@ -7029,7 +6861,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -7060,15 +6891,6 @@
 			)
 		)
 		(property "LCSC ID" "C397419"
-			(at 242.57 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser PN" "538-22-03-5035 "
 			(at 242.57 123.19 0)
 			(effects
 				(font
